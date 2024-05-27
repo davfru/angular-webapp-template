@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "prod": {
-              "browserTarget": "codedincloud:build:prod"
+              "buildTarget": "codedincloud:build:prod"
             },
             "dev": {
-              "browserTarget": "codedincloud:build:dev"
+              "buildTarget": "codedincloud:build:dev"
             }
           },
           "defaultConfiguration": "dev"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "codedincloud:build"
+            "buildTarget": "codedincloud:build"
           }
         },
         "test": {
