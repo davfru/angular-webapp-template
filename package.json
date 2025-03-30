@@ -1,45 +1,48 @@
 {
-  "name": "angular-starter-project",
-  "version": "1.0.0",
-  "author": {
-    "name": "angular-starter-project",
-    "url": "https://codedincloud.com"
-  },
+  "name": "angular-webapp-template",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "start": "ng serve",
     "build": "ng build",
-    "prestart": "npm run build",
-    "start": "ng serve"
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "preserve:ssr:angular-webapp-template": "ng build",
+    "serve:ssr:angular-webapp-template": "node dist/angular-webapp-template/server/server.mjs"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.3.10",
-    "@angular/common": "^17.3.10",
-    "@angular/compiler": "^17.3.10",
-    "@angular/core": "^17.3.10",
-    "@angular/forms": "^17.3.10",
-    "@angular/platform-browser": "^17.3.10",
-    "@angular/platform-browser-dynamic": "^17.3.10",
-    "@angular/router": "^17.3.10",
-    "@dynamic-mapper/mapper": "^1.10.4",
-    "@ngx-translate/core": "^15.0.0",
-    "@ngx-translate/http-loader": "^8.0.0",
-    "tailwindcss": "^3.4.1",
+    "@angular/common": "^19.2.0",
+    "@angular/compiler": "^19.2.0",
+    "@angular/core": "^19.2.0",
+    "@angular/forms": "^19.2.0",
+    "@angular/platform-browser": "^19.2.0",
+    "@angular/platform-browser-dynamic": "^19.2.0",
+    "@angular/platform-server": "^19.2.0",
+    "@angular/router": "^19.2.0",
+    "@angular/ssr": "^19.2.1",
+    "@tailwindcss/postcss": "^4.0.11",
+    "express": "^4.18.2",
+    "postcss": "^8.5.3",
+    "rxjs": "~7.8.0",
+    "serverless-http": "^3.2.0",
+    "tailwindcss": "^4.0.11",
     "tslib": "^2.3.0",
-    "lottie-web": "^5.12.2",
-    "ngx-lottie": "^10.0.0"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.3.8",
-    "@angular/cli": "~17.3.8",
-    "@angular/compiler-cli": "^17.3.10",
-    "@types/jasmine": "~4.3.0",
-    "jasmine-core": "~4.6.0",
+    "@angular-devkit/build-angular": "^19.2.1",
+    "@angular/cli": "^19.2.1",
+    "@angular/compiler-cli": "^19.2.0",
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^18.18.0",
+    "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.5"
+    "typescript": "~5.7.2"
   }
 }
